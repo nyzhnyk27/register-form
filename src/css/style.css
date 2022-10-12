@@ -118,3 +118,10 @@ form .input-field {
   text-align: center;
 }
 
+/* for image */
+.responsive {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    object-fit: cover;
+  }
