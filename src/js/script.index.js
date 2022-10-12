@@ -66,6 +66,10 @@ form.addEventListener("submit", (e) => {
     !passField.classList.contains("invalid") &&
     !cPassField.classList.contains("invalid")
   ) {
+    let result = confirm(`Please confirm account creation for ${emailInput.value}`)
+    if (result == false) {
+    preventDefault();
+    }
 
     location.href = form.getAttribute("action");
   }
