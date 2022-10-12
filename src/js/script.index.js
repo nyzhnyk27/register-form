@@ -76,3 +76,19 @@ form.addEventListener("submit", (e) => {
   
 });
 
+
+// Getting value from input field
+function getInfoFromField() {
+  const userEmail = document.getElementById("emailInput");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); //preventing form submitting
+
+    const emailValue = emailInput.value;
+
+    localStorage.setItem("user-email", emailValue);
+    
+  })
+}
+
+getInfoFromField();
